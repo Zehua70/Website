@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <title>Save Earth</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark flex sticky-top border-bottom border-light">
+    <div class="container-fluid w-75">
+      
+      <a class="navbar-brand text-light " href="/HTML/index.html">
+        <!-- logo  -->
+        <!-- WWF img: https://pngset.com/download-free-png-uqcit -->
+        <img src="/imgs/icons/wwf.png" alt="menu" id="logo"/>
+      </a>
+
+      <!-- navbar collapse button  -->
+      <button class="navbar-toggler text-light border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- use img aft collapse  -->
+        <!-- Original use this boostrap icon <span class="navbar-toggler-icon"></span> but coz i set the <nav bg-dark, cant see the icon clearly-->
+        <img src="/imgs/icons/menu.png" alt="menu" /> 
+      </button>
+
+
+      <!-- navbar link & text -->
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="/HTML/index.html">Home</a>
+          </li>           
+          <li class="nav-item ">
+            <a class="nav-link text-light " href="/HTML/aboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-light " href="/HTML/others.html">Others</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-light " href="/HTML/contact.html">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+      
+  <div class="justify-content-center align-items-center d-flex flex-column text-light bg-dark w-100 main-container">
+
+    <div class="mb-4 border justify-content-center w-75 rounded">
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-9 mb-md-0 p-5 ">
+
+          <form id="contact-form" name="contact-form" class="w-100">
+
+            <!-- name + email same row (type text, email) -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="name" class="">Your name</label>
+                  <input type="text" id="name" name="name" class="form-control">
+                </div>
+              </div>
+            
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="email" class="">Your email</label>
+                  <input type="email" id="email" name="email" class="form-control">
+                </div>
+              </div>
+            </div>
+
+            <!-- tittle + message same row (type text, select) -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <label for="selectMenu" class="form-label">Enabled select menu</label>
+                  <select id="selectMenu" class="form-select">
+                      <option>Feedback</option>
+                      <option>Report Error</option>
+                      <option>Partner</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <label for="message">Your message</label>
+                  <textarea id="message" name="message" class="form-control md-textarea"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="md-form">
+                  <label for="file" class="form-label">Any Files can attached here</label>
+                  <input type="file" id="file" class="form-control">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="md-form mt-5 ">
+                  <input type="checkbox" class="form-check-input" id="Checkbox">
+                  <label class="form-check-label" for="Checkbox">I would like to subscribe</label>
+                </div>
+              </div>
+            </div>
+          
+          </form>
+
+          <!-- button do nothing just ofr display  -->
+          <div class="text-center text-md-left mt-5">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+  
+              
+
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <div class="mb-4">
+        <p>
+          Wildlife conservation matters. Protect animals, preserve habitats, maintain biodiversity, and cherish the natural wonders of our planet.
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      &copy;<a class="text-white text-decoration-none" href="/HTML/index.html">Zehua</a>2023
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

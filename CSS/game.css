@@ -1,0 +1,166 @@
+/* id = game container  */
+#Gamecontainer
+{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+  
+/* in the container set the properties of id = dino(saur)  */
+#Gamecontainer #dino
+{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 28px;
+    left: 30px;
+}
+
+/* set dino picture size  */
+#Gamecontainer #dino img
+{
+    height: 70px;
+    width: 70px;
+}
+
+/* use to start the dino animation  */
+.dinoActive
+{
+    animation: animateDino 0.5s linear infinite;
+}
+
+/* dino jump animation  */
+@keyframes animateDino
+{
+    0%,100%
+    {
+        bottom: 28px;
+    }
+
+    45%,55%
+    {
+        bottom: 160px;
+    }
+}
+
+/* set properties for obstacle  */
+#Gamecontainer #obstacle
+{
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+/* size of the obstacel img  */
+#Gamecontainer #obstacle img
+{
+    height: 80px;
+    width: 90px;
+}
+/* use to start the obstacle animation  */
+.obstacleActive
+{
+    animation: obstacleAnimate 1s linear infinite;
+}
+/* obstacle move from right to left animation  */
+@keyframes obstacleAnimate
+{
+    0%
+    {
+        right: -125px;
+    }
+
+    100%
+    {
+        right: 100%;
+    }
+}
+
+/* properties for floor */
+#Gamecontainer #floor
+{
+    height: 30px;
+    position: absolute;
+    /* make sure the floor is at bottom */
+    bottom: 0;
+}
+
+#Gamecontainer #floor img
+{
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    left: 0;
+    animation: none;
+}
+
+/* floor animation move from right to left  */
+@keyframes floorAnimate
+{
+    0%
+    {
+        left: 0;
+    }
+
+    100%
+    {
+        left: -200px;
+    }
+}
+
+#Gamecontainer #cloud
+{
+    height: 80px;
+    width: 1200px;
+    border-radius: 40px;
+    position: absolute;
+    top: 30px;
+}
+
+#Gamecontainer #cloud img
+{
+    height: 40px;
+    width: 140px;
+    position: absolute;
+    animation: none;
+}
+
+@keyframes cloudAnimate
+{
+    0%
+    {
+        left: 0px;
+    }
+
+    100%
+    {
+        left: 100%;
+    }
+}
+
+#gameStart
+{
+    display: block;
+    font-size: 70px;
+    position: absolute;
+    left: calc(50% - 280px);
+    top: calc(50% - 40px);
+    width: 600px;
+    height: 80px;
+    color: #525252;
+}
+
+#gameOver
+{
+    display: none;
+    font-size: 70px;
+    position: absolute;
+    left: calc(50% - 280px);
+    top: calc(50% - 40px);
+    width: 600px;
+    height: 80px;
+    color: #525252;
+}
+

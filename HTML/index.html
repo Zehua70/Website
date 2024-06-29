@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <!-- import free icons from : https://fontawesome.com/icons  -->
+    <script src="https://kit.fontawesome.com/f4b7b7ba57.js" crossorigin="anonymous"></script>
+
+    <title>Save Earth</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark flex sticky-top border-bottom border-light">
+        <div class="container-fluid w-75">
+          
+          <a class="navbar-brand text-light " href="/HTML/index.html">
+            <!-- logo  -->
+            <!-- WWF img: https://pngset.com/download-free-png-uqcit -->
+            <img src="/imgs/icons/wwf.png" alt="menu" id="logo"/>
+          </a>
+
+          <!-- navbar collapse button  -->
+          <button class="navbar-toggler text-light border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- use img aft collapse  -->
+            <!-- Original use this boostrap icon <span class="navbar-toggler-icon"></span> but coz i set the <nav bg-dark, cant see the icon clearly-->
+            <img src="/imgs/icons/menu.png" alt="menu" /> 
+          </button>
+
+
+          <!-- navbar link & text -->
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="/HTML/index.html">Home</a>
+              </li>           
+              <li class="nav-item ">
+                <a class="nav-link text-light " href="/HTML/aboutMe.html">About Me</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-light " href="/HTML/others.html">Others</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-light " href="/HTML/contact.html">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+  </nav>
+      
+  <div class="justify-content-center align-items-center d-flex flex-column text-light bg-dark w-100">
+
+    <!-- tiger block  -->
+    <div class="w-100 position-relative">
+      <!-- img : https://www.pexels.com/photo/tiger-walking-near-trees-in-zoological-garden-505698/  -->
+        <img src="/imgs/bg/tiger.jpg" alt="tiger" class="bg w-100">
+
+        <!-- d-none: display: none on all screen sizes. d-md-block: displayed as a block (display: block) on medium size screens and above. -->
+        <div class="d-none d-md-block d-md-block position-absolute bottom-0 fs-3 m-3 text-dark p-3 bg-light" style="width: 500px; border-radius: 10px;">
+          <!-- just a black color line for deco purpose -->
+          <div class="bg-dark mt-2" style="width: 150px; height: 5px;"></div>
+          <h3 class="mt-3">CELEBRATE GLOBAL TIGER DAY!</h3>
+          <p class="tiger-block-content">You can protect wildlife and nature worldwild today.</p>
+          
+          <a href="https://support.worldwildlife.org/site/Donation2?df_id=18236&18236.donation=form1&s_src=AWE2401OQ18807A07140RX&_gl=1*gzsh0l*_ga*MjA5MTE5MDk3NS4xNjkxMjE0MTM3*_ga_FK6M9RK84Z*MTY5MTIxNDEzNy4xLjEuMTY5MTIxODU0OC4xNi4wLjA.&_ga=2.111582148.1178504971.1691214137-2091190975.1691214137" class="btn-adopt">
+            SYMBOLICALLY ADOPT A TIGER &nbsp;<i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+    </div>
+    <div class="w-75 d-flex justify-content-center flex-column align-items-center">
+
+      <!-- text -->
+      <div class="text-center justify-content-center fw-bold m-4">
+        <div>
+          <p>
+            Protecting wild animals is vital for maintaining ecological balance, biodiversity, and a healthy planet. They contribute to ecosystem services, including pollination, pest control, and nutrient cycling. Preserving wildlife ensures genetic diversity, aiding adaptation to changing environments. Ethically, all species have intrinsic value and a right to exist. Our own well-being is interconnected with theirs.
+          </p>
+        </div>
+        <p class="fs-2 text-decoration-underline">
+          How Can Protect Them
+        </p>
+      </div>
+
+      <!-- Same Row 4 cards -->
+      <div class="row">
+        <!-- card 1 on small (phone size) col-12 take whole row -->
+        <!-- card 1 on medium (tablet size) col-md-6 take 6 colums -->
+        <!-- card 1 on large (website size) col-lg-3 take 3 colums -->
+        <div class="col-12 col-md-6 col-lg-3 mt-2" style="margin-bottom: 40px;">
+          <div class="cards card h-100 align-items-start">
+            <!-- Panda: https://www.teenvogue.com/story/baby-pandas-chengdu-china-photos -->
+            <img src="/imgs/index_img/panda.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Support Conservation Organizations</h5>
+              <!-- small use to display a smaller text than the other text (tittle)   -->
+              <small class="card-text">
+                Contribute to reputable wildlife conservation organizations that work to protect and preserve natural habitats and endangered species. Your financial support can make a significant difference.
+              </small>
+            </div>
+
+            <!-- Card1 Button trigger modal -->
+            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#Card1Modal">
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Card1 Pop Modal -->
+        <div class="modal fade" id="Card1Modal" tabindex="-1" aria-labelledby="Card1ModalLabel" aria-hidden="true">
+          <!-- modal-dialog-centered display the pop window at center of the webpage -->
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-dark" id="Card1ModalLabel"> &nbsp;<i class="fa-solid fa-hand-holding-dollar"></i>&nbsp;Support Conservation Organizations</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-dark">
+                  &nbsp;Supporting reputable wildlife conservation organizations is a powerful way to safeguard precious ecosystems and endangered species. 
+                </p>
+                <!-- WWF Modal: https://www.advante.co.uk/wwf-make-a-difference-with-every-hire/ -->
+                <img src="/imgs/index_img/WWF_Modal.jpg" class="card-img-top" alt="...">
+                <p class="text-dark mt-3">
+                  &nbsp;Your financial contributions aid in implementing crucial conservation programs, habitat restoration, anti-poaching efforts, and public awareness campaigns. Together, we can secure a sustainable future for wildlife and protect the delicate balance of our planet's biodiversity.
+                </p>
+              </div>
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- card 2 on small (phone size) col-12 take whole row -->
+        <!-- card 2 on medium (tablet size) col-md-6 take 6 colums -->
+        <!-- card 2 on large (website size) col-lg-3 take 3 colums -->
+        <div class="col-12 col-md-6 col-lg-3 mt-2"  style="margin-bottom: 40px;">
+          <div class="cards card h-100 align-items-start">
+            <!-- Turtle: https://www.nbcnews.com/mach/science/sea-turtle-survey-shows-endangered-animals-are-making-comeback-ncna1000646 -->
+            <img src="/imgs/index_img/turtle.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Promote Sustainable Practices</h5>
+              <small class="card-text">
+                Encourage and practice sustainable habits in your daily life, such as reducing waste, using eco-friendly products, and supporting sustainable agriculture and fishing practices.
+              </small>
+            </div>
+            <!-- Card2 Button trigger modal -->
+            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#Card2Modal">
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Card2 Pop Modal -->
+        <div class="modal fade" id="Card2Modal" tabindex="-1" aria-labelledby="Card2ModalLabel" aria-hidden="true">
+          <!-- modal-dialog-centered display the pop window at center of the webpage -->
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-dark" id="Card2ModalLabel"> &nbsp;<i class="fa-solid fa-earth-asia"></i>&nbsp;Promote Sustainable Practices</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-dark">
+                  &nbsp;Embracing sustainable habits in our daily lives fosters a positive impact on wildlife and the environment.
+                </p>
+                <!-- Sustainable Modal: https://www.pngwing.com/en/free-png-ndxtj -->
+                <img src="/imgs/index_img/SustainablePNG.png" class="card-img-top" alt="...">
+                <p class="text-dark mt-3">
+                  &nbsp;By reducing waste, we minimize the risk of pollution and its detrimental effects on ecosystems. Choosing eco-friendly products and supporting sustainable agriculture and fishing practices promote the conservation of natural resources, reducing habitat destruction and overexploitation. Our collective efforts in sustainability can help create a more resilient and thriving planet for both humans and wild animals.
+                </p>
+              </div>
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 on small (phone size) col-12 take whole row -->
+        <!-- card 3 on medium (tablet size) col-md-6 take 6 colums -->
+        <!-- card 3 on large (website size) col-lg-3 take 3 colums -->
+        <div class="col-12 col-md-6 col-lg-3 mt-2"  style="margin-bottom: 40px;">
+          <div class="cards card h-100 align-items-start">
+            <!-- Leopard: https://www.britannica.com/animal/leopard -->
+            <img src="/imgs/index_img/leopard.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fight against Wildlife Trafficking</h5>
+              <small class="card-text">
+                Report illegal wildlife trade and trafficking activities to the authorities. This trade poses a significant threat to many endangered species.
+              </small>
+            </div>
+            <!-- Card3 Button trigger modal -->
+            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#Card3Modal">
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Card3 Pop Modal -->
+        <div class="modal fade" id="Card3Modal" tabindex="-1" aria-labelledby="Card3ModalLabel" aria-hidden="true">
+          <!-- modal-dialog-centered display the pop window at center of the webpage -->
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-dark" id="Card3ModalLabel"> &nbsp;<i class="fa-solid fa-person-rifle"></i>&nbsp;Fight against Wildlife Trafficking</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-dark">
+                  &nbsp;Reporting illegal wildlife trade and trafficking to the authorities is crucial for combating this illicit activity. The demand for exotic animals and their parts fuels poaching and smuggling, leading to severe population declines and habitat destruction.
+                </p>
+                <!-- Animal trafficking: https://www.standard.co.uk/news/uk/pictured-adorable-endangered-siberian-tiger-cubs-born-in-uk-safari-park-a3083976.html -->
+                <img src="/imgs/index_img/Animal_Trafficking.jpg" class="card-img-top" alt="...">
+                <p class="text-dark mt-3">
+                  &nbsp;By acting as responsible whistleblowers, we aid law enforcement in dismantling illegal networks, protecting endangered species, and upholding the integrity of global biodiversity.
+                </p>
+              </div>
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 on small (phone size) col-12 take whole row -->
+        <!-- card 4 on medium (tablet size) col-md-6 take 6 colums -->
+        <!-- card 4 on large (website size) col-lg-3 take 3 colums -->
+        <div class="col-12 col-md-6 col-lg-3 mt-2"  style="margin-bottom: 40px;">
+          <div class="cards card h-100 align-items-start">
+            <!-- Zoo: https://sgmagazine.com/things-to-do/rediscover-wildlife-at-singapore-zoos-50th-anniversary-golden-zoobilee/ -->
+            <img src="/imgs/index_img/zoo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Promote Responsible Tourism</h5>
+              <small class="card-text">
+                When traveling, choose eco-friendly and responsible tour operators that prioritize wildlife conservation and avoid supporting activities that exploit animals.
+              </small>
+            </div>
+            <!-- Card4 Button trigger modal -->
+            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#Card4Modal">
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Card4 Pop Modal -->
+        <div class="modal fade" id="Card4Modal" tabindex="-1" aria-labelledby="Card4ModalLabel" aria-hidden="true">
+          <!-- modal-dialog-centered display the pop window at center of the webpage -->
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-dark" id="Card4ModalLabel"> &nbsp;<i class="fa-solid fa-plane-arrival"></i>&nbsp;Promote Responsible Tourism</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-dark">
+                  &nbsp;When selecting eco-friendly and responsible tour operators, we actively contribute to wildlife conservation and ethical tourism.
+                </p>
+                <!-- Tourism: https://amenitiz.com/en/blog/what-are-benefits-of-responsible-tourism/?p_a=false -->
+                <img src="/imgs/index_img/Tourism.jpg" class="card-img-top" alt="...">
+                <p class="text-dark mt-3">
+                  &nbsp;By avoiding activities that exploit animals, such as captive wildlife interactions or animal performances, we discourage practices that harm animals for entertainment. Supporting conservation-focused operators helps sustain local economies while safeguarding the natural habitats and species we admire, ensuring their well-being for generations to come.
+                </p>
+              </div>
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+  </div>
+
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <div class="mb-4">
+        <p>
+          Wildlife conservation matters. Protect animals, preserve habitats, maintain biodiversity, and cherish the natural wonders of our planet.
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);"> &copy; <a class="text-white text-decoration-none" href="/HTML/index.html">Zehua</a>2023
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

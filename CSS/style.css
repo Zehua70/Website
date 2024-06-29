@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(33, 37, 41);
+}
+
+.main-container {
+  min-height: 100vh;
+}
+
+.navbar {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav-item
+{
+  padding-left: 25px;
+}
+
+/* navbar wwf panda logo */
+.navbar #logo {
+  width: 35px;
+  margin-right: 30px;
+}
+
+/* navbar icon img size  */
+.navbar img {
+  width: 20px;
+}
+
+a {
+  padding: 5px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 4 cards hover  */
+.cards:hover
+{
+  box-shadow: 0 6px 20px 0 rgb(0, 0, 0);
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+/* tiger block content text  */
+.tiger-block-content
+{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.btn-adopt
+{
+  font-size: 15px;
+  background: rgb(22, 107, 220);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  text-align: center;
+  transition-duration: 0.2s;
+  padding: 10px;
+}
+
+.btn-adopt:hover
+{
+  box-shadow: 0 6px 20px 0 rgba(41, 40, 40, 0.822);
+  text-decoration: none;
+}
+
+
